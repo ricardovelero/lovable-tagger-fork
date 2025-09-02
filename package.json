@@ -17,7 +17,7 @@
     "lint:fix": "eslint --ext .js,.ts --fix .",
     "prepublishOnly": "npm run build",
     "clean": "rimraf dist",
-    "prepare": "npm run clean && npm run build",
+    "prepare": "echo 'skip prepare on GitHub install'",
     "format": "prettier --write \"src/**/*.ts\" \"tests/**/*.ts\"",
     "coverage": "vitest run --coverage"
   },
